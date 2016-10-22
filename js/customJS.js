@@ -1,23 +1,26 @@
-// Get the modal
+// Getting id of entire modal
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
+// Getting id of <a> link which will close the modal
+/*var link = document.getElementById("floatingDiv");*/
 var link = document.getElementById("myLink");
 
-// Get the <span> element that closes the modal
+// getting span element which closes modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
+// Opening the modal, on click of anchor tag <a> element
+
 link.onclick = function() {
     modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+
+// Closing the modal on click of  (x) button
 span.onclick = function() {
     modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Close modal on mouse-click at any area outside modal
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -30,3 +33,18 @@ document.addEventListener('keyup', function(e) {
         modal.style.display = "none";
     }
 });
+
+//If modal shouldn't be displayed on desktops, follow these steps:
+//Uncomment below function controlModal(), alongwith line number 5, 
+//Also, comment line number 6, 13, 14, 15
+// Similarly in index.html, uncomment line 41 and comment line 42 
+
+/*
+function controlModal () {
+if(document.body.clientWidth > 1024){
+    link.onclick = null;
+}
+else{
+    modal.style.display = "block";
+}
+}*/
