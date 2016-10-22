@@ -136,18 +136,9 @@ html {
 
 @media only screen and (min-width: 768px){
     /* For iPad: */
-    .col-1 {width: 48%;}
-    .col-2 {width: 48%; height:25px;}
-    .col-3 {width: 48%;}
-    .col-4 {width: 48%;}
-    .col-5 {width: 48%;}
-    .col-6 {width: 48%;}
-    .col-7 {width: 48%;}
-    .col-8 {width: 48%;}
-    .col-9 {width: 48%;}
-    .col-10 {width: 48%;}
-    .col-11 {width: 48%;}
-    .col-12 {width: 48%;}
+ [class*="col-"] {
+        width: 50%;
+    }
     .header1 {
     background-color: #EEEDEF;
     color: #ffffff;
@@ -185,14 +176,14 @@ html {
     
     #smallContainers {
     font-weight:bold;
-    width:60%;
+    width:45%;
     
 }
 
 .smallBox1 {
     margin-top:-205px;
     border-bottom: 1px dashed #d8d8d8;
-    margin-left:-58px;
+    margin-left:-61px;
     height: auto;
     background: white;
 }
@@ -201,14 +192,14 @@ html {
     margin-top:-65px;
     border-bottom: 1px dashed #d8d8d8;
     background: white;
-    margin-left:-58px;
+    margin-left:-61px;
     height: auto;
 }
 
 .smallBox3 {
     margin-top:0px;
     background: white;
-    margin-left:-58px;
+    margin-left:-61px;
     height: auto;
 }
     
@@ -243,7 +234,7 @@ html {
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1025px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -352,6 +343,3 @@ html {
     padding-right:5px ;
 }
 }
-
-
-
