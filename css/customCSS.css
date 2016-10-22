@@ -6,6 +6,7 @@
     clear: both;
     display: block;
 }
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -24,22 +25,16 @@ html {
     margin-bottom: 7px;
     background-color :#d8d8d8;
     color: #ffffff;
-    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 }
 
-/*.menu li:hover {
-    background-color: #0099cc;
-}*/
+/* The below media query is for phones */
 
-
-
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 749px) {
     [class*="col-"] {
         width: 100%;
     }
-        .header1 {
+        
+    .header1 {
     background-color: #D8D8D8;
     color: #ffffff;
    
@@ -60,7 +55,7 @@ html {
     margin-left:10%;
     margin-right:10%;
     height:400px;
-        display:none;
+    display:none;
 }
     
     #colorStrip1{
@@ -70,7 +65,7 @@ html {
     background-color: #d8d8d8;
     height:100px;
     margin-top:-70px;
-        float: right;
+    float: right;
     
 }
     
@@ -134,15 +129,17 @@ html {
 }
 
 
-@media only screen and (min-width: 768px){
-    /* For iPad: */
+/* The below media query is for iPads (portrait  mode) */
+
+@media only screen and (min-width: 750px)
+    and (max-width: 1024px)
+{
  [class*="col-"] {
         width: 50%;
     }
     .header1 {
     background-color: #EEEDEF;
     color: #ffffff;
-   /* padding: 15px;*/
     height:250px;
     width:100%;
 }
@@ -169,7 +166,7 @@ html {
     border-color: #d8d8d8;
     background-color: #d8d8d8;
     height:100px;
-    margin-top:-80px;
+    margin-top:-110px;
         float: right;
     
 }
@@ -186,10 +183,12 @@ html {
     margin-left:-61px;
     height: auto;
     background: white;
+   
 }
 
 .smallBox2 {
-    margin-top:-65px;
+    /*margin-top:-47px;*/
+    margin-top: -47px;
     border-bottom: 1px dashed #d8d8d8;
     background: white;
     margin-left:-61px;
@@ -208,7 +207,7 @@ html {
     margin-bottom: 0px;
     background-color :white;
     color: #0165A7;
-    margin-top:-400px;
+    margin-top:-420px;
     margin-left:10%;
     width:75%;
 }
@@ -234,8 +233,66 @@ html {
 
 }
 
+
+/* The below media query is for iPads (landscape  mode) */
+
+@media only screen and (min-width: 925px)
+    and (max-width: 1024px)
+{
+ [class*="col-"] {
+        width: 50%;
+    }
+ 
+    #colorStrip1{
+    width: 40%; height: 15px;
+    border-style: solid;
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    height:100px;
+    margin-top:-80px;
+        float: right;
+    
+}
+
+.smallBox1 {
+    margin-top:-205px;
+    border-bottom: 1px dashed #d8d8d8;
+    margin-left:-61px;
+    height: auto;
+    background: white;
+   
+}
+
+.smallBox2 {
+    /*margin-top:-47px;*/
+    margin-top: -65px;
+    border-bottom: 1px dashed #d8d8d8;
+    background: white;
+    margin-left:-61px;
+    height: auto;
+}
+
+.smallBox3 {
+    margin-top:0px;
+    background: white;
+    margin-left:-61px;
+    height: auto;
+}
+    
+    .floatingMenu li {
+    padding: 8px;
+    margin-bottom: 0px;
+    background-color :white;
+    color: #0165A7;
+    margin-top:-380px;
+    margin-left:10%;
+    width:75%;
+}
+}
+
+/* The below media query is for desktops  */
+
 @media only screen and (min-width: 1025px) {
-    /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -251,18 +308,15 @@ html {
     .header1 {
     background-color: #EEEDEF;
     color: #ffffff;
-   /* padding: 15px;*/
     height:150px;
     width:100%;
 }
-    
     
 #colorStrip{
     width: 100%; height: 15px;
     border-style: solid;
     border-color: #0165A7;
-    background-color: #0165A7;
-    
+    background-color: #0165A7;  
 }
     
     .leftContainer {
@@ -279,14 +333,11 @@ html {
     height:100px;
     margin-top:19%;
         float:left;
-        
-    
 }
     
     #smallContainers {
     font-weight:bold;
     width:70%;
-    
 }
 
 .smallBox1 {
@@ -310,7 +361,6 @@ html {
 .smallBox3 {
     margin-top:5%;
     margin-left:0px;
-   /* border-right: 1px dashed #d8d8d8;*/
     height: auto;
     padding: 20px -5px 20px 25px;
 }
