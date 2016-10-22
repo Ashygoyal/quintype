@@ -15,6 +15,9 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
+a:hover {
+    color:red;
+}
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -33,7 +36,11 @@ html {
     [class*="col-"] {
         width: 100%;
     }
-        
+ 
+    div:nth-child(odd){
+        font-family: Arial, Helvetica, sans-serif;
+        font-style:italic;
+    }
     .header1 {
     background-color: #D8D8D8;
     color: #ffffff;
@@ -68,6 +75,7 @@ html {
     float: right;
     
 }
+    
     
     #smallContainers {
     font-weight:bold;
@@ -252,31 +260,36 @@ html {
     margin-top:-80px;
         float: right;
     
+} 
+    
+#smallContainers {
+    font-weight:bold;
+    width:70%;
 }
 
 .smallBox1 {
-    margin-top:-205px;
-    border-bottom: 1px dashed #d8d8d8;
-    margin-left:-61px;
+    margin-top:5%;
+    border-right: 1px dashed #d8d8d8;
+    margin-left:-40px;
+    border-bottom: 0px;
     height: auto;
-    background: white;
-   
+    padding: 20px -10px 20px 5px;
 }
 
 .smallBox2 {
-    /*margin-top:-47px;*/
-    margin-top: -65px;
-    border-bottom: 1px dashed #d8d8d8;
-    background: white;
-    margin-left:-61px;
+    margin-top:5%;
+    border-right: 1px dashed #d8d8d8;
+    margin-left:0px;
     height: auto;
+    border-bottom: 0px;
+    padding: 20px -5px 20px 25px;
 }
 
 .smallBox3 {
-    margin-top:0px;
-    background: white;
-    margin-left:-61px;
+    margin-top:5%;
+    margin-left:0px;
     height: auto;
+    padding: 20px -5px 20px 25px;
 }
     
     .floatingMenu li {
@@ -311,6 +324,8 @@ html {
     height:150px;
     width:100%;
 }
+    
+
     
 #colorStrip{
     width: 100%; height: 15px;
