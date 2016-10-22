@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#d8d8d8;
+    color: #ffffff;
+}
+
+/* The below media query is for phones */
+
+@media only screen and (max-width: 749px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+        
+    .header1 {
+    background-color: #D8D8D8;
+    color: #ffffff;
+   
+    height:250px;
+    width:100%;
+}
+    
+#colorStrip{
+    width: 100%; height: 5px;
+    border-style: solid;
+    border-color: #0165A7;
+    background-color: #0165A7;
+    
+}
+    
+  .leftContainer {
+    margin-top:-220px;   
+    margin-left:10%;
+    margin-right:10%;
+    height:400px;
+    display:none;
+}
+    
+    #colorStrip1{
+    width: 35%; height: 15px;
+    border-style: solid;
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    height:100px;
+    margin-top:-70px;
+    float: right;
+    
+}
+    
+    #smallContainers {
+    font-weight:bold;
+    width:58%;
+    
+}
+
+.smallBox1 {
+    margin-top:-10px;
+    border-bottom: 1px dashed #d8d8d8;
+    height: auto;
+    background: white;
+    padding: 0px 15px 20px 15px;
+}
+
+.smallBox2 {
+    padding: 10px 15px 20px 15px;
+    border-bottom: 1px dashed #d8d8d8;
+    background: white;
+    height: auto;
+}
+
+.smallBox3 {
+    margin-top:0px;
+    background: white;
+    border-bottom: 1px dashed #d8d8d8;
+    height: auto;
+    padding: 18px 15px 25px 15px;
+}
+    
+    .floatingMenu li {
+    padding: 8px;
+    margin-bottom: 0px;
+    background-color :white;
+    color: #0165A7;
+    margin-top:-900px;
+    margin-left:30%;
+    width:75%;
+}
+
+.floatingMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top:300px;
+}
+
+.floatingList {
+    padding-bottom:0 !important; 
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.floatingDiv {
+    padding-bottom:5px; 
+    padding-left:10px ;
+    padding-right:5px ;
+}
+}
+
+
+/* The below media query is for iPads (portrait  mode) */
+
+@media only screen and (min-width: 750px)
+    and (max-width: 1024px)
+{
+ [class*="col-"] {
+        width: 50%;
+    }
+    .header1 {
+    background-color: #EEEDEF;
+    color: #ffffff;
+    height:250px;
+    width:100%;
+}
+    
+    
+#colorStrip{
+    width: 100%; height: 12px;
+    border-style: solid;
+    border-color: #0165A7;
+    background-color: #0165A7;
+    
+}
+    
+    .leftContainer {
+    margin-top:-220px;   
+    margin-left:10%;
+    margin-right:10%;
+    height:400px;
+}
+    
+    #colorStrip1{
+    width: 40%; height: 15px;
+    border-style: solid;
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    height:100px;
+    margin-top:-110px;
+        float: right;
+    
+}
+    
+    #smallContainers {
+    font-weight:bold;
+    width:45%;
+    
+}
+
+.smallBox1 {
+    margin-top:-205px;
+    border-bottom: 1px dashed #d8d8d8;
+    margin-left:-55px;
+    height: auto;
+    background: white;
+   
+}
+
+.smallBox2 {
+    /*margin-top:-47px;*/
+    margin-top: -67px;
+    border-bottom: 1px dashed #d8d8d8;
+    background: white;
+    margin-left:-55px;
+    height: auto;
+}
+
+.smallBox3 {
+    margin-top:0px;
+    background: white;
+    margin-left:-55px;
+    height: auto;
+}
+    
+    .floatingMenu li {
+    padding: 8px;
+    margin-bottom: 0px;
+    background-color :white;
+    color: #0165A7;
+    margin-top:-420px;
+    margin-left:10%;
+    width:75%;
+}
+
+.floatingMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top:300px;
+}
+
+.floatingList {
+    padding-bottom:0 !important; 
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.floatingDiv {
+    padding-bottom:5px; 
+    padding-left:10px ;
+    padding-right:5px ;
+}
+
+}
+
+
+/* The below media query is for iPads (landscape  mode) */
+
+@media only screen and (min-width: 925px)
+    and (max-width: 1024px)
+{
+ [class*="col-"] {
+        width: 50%;
+    }
+ 
+    #colorStrip1{
+    width: 40%; height: 15px;
+    border-style: solid;
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    height:100px;
+    margin-top:-80px;
+        float: right;
+    
+}
+
+.smallBox1 {
+    margin-top:-205px;
+    border-bottom: 1px dashed #d8d8d8;
+    margin-left:-61px;
+    height: auto;
+    background: white;
+   
+}
+
+.smallBox2 {
+    /*margin-top:-47px;*/
+    margin-top: -66px;
+    border-bottom: 1px dashed #d8d8d8;
+    background: white;
+    margin-left:-61px;
+    height: auto;
+}
+
+.smallBox3 {
+    margin-top:0px;
+    background: white;
+    margin-left:-61px;
+    height: auto;
+}
+    
+    .floatingMenu li {
+    padding: 8px;
+    margin-bottom: 0px;
+    background-color :white;
+    color: #0165A7;
+    margin-top:-380px;
+    margin-left:10%;
+    width:75%;
+}
+}
+
+/* The below media query is for desktops  */
+
+@media only screen and (min-width: 1025px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .header1 {
+    background-color: #EEEDEF;
+    color: #ffffff;
+    height:150px;
+    width:100%;
+}
+ 
+    a:hover {
+        color:red;
+    }    
+#colorStrip{
+    width: 100%; height: 15px;
+    border-style: solid;
+    border-color: #0165A7;
+    background-color: #0165A7;  
+}
+    
+    .leftContainer {
+    margin-top:-90px;   
+    margin-left:20%;
+    margin-right:10%;
+    height:430px;
+}
+    #colorStrip1{
+    width: 80%; height: 15px;
+    border-style: solid;
+    border-color: #d8d8d8;
+    background-color: #d8d8d8;
+    height:100px;
+    margin-top:19%;
+        float:left;
+}
+    
+    #smallContainers {
+    font-weight:bold;
+    width:70%;
+}
+
+.smallBox1 {
+    margin-top:5%;
+    border-right: 1px dashed #d8d8d8;
+    margin-left:-40px;
+    border-bottom: 0px;
+    height: auto;
+    padding: 20px -10px 20px 5px;
+}
+
+.smallBox2 {
+    margin-top:5%;
+    border-right: 1px dashed #d8d8d8;
+    margin-left:0px;
+    height: auto;
+    border-bottom: 0px;
+    padding: 20px -5px 20px 25px;
+}
+
+.smallBox3 {
+    margin-top:5%;
+    margin-left:0px;
+    height: auto;
+    padding: 20px -5px 20px 25px;
+}
+    
+    .floatingMenu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :white;
+    color: #0165A7;
+    margin-top:-430px;
+    margin-left:50%;
+    width:70%;
+}
+
+.floatingMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floatingList {
+    padding-bottom:0 !important; 
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.floatingDiv {
+    padding-bottom:5px; 
+    padding-left:10px ;
+    padding-right:5px ;
+}
+}
