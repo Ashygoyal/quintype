@@ -30,21 +30,8 @@ html {
 /*.menu li:hover {
     background-color: #0099cc;
 }*/
-.aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.footer {
-    background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-}
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -58,6 +45,14 @@ html {
    
     height:250px;
     width:100%;
+}
+    
+#colorStrip{
+    width: 100%; height: 5px;
+    border-style: solid;
+    border-color: #0165A7;
+    background-color: #0165A7;
+    
 }
     
   .leftContainer {
@@ -74,7 +69,7 @@ html {
     border-color: #d8d8d8;
     background-color: #d8d8d8;
     height:100px;
-    margin-top:-80px;
+    margin-top:-70px;
         float: right;
     
 }
@@ -90,10 +85,11 @@ html {
     border-bottom: 1px dashed #d8d8d8;
     height: auto;
     background: white;
+    padding: 0px 15px 20px 15px;
 }
 
 .smallBox2 {
-    margin-top:0px;
+    padding: 10px 15px 20px 15px;
     border-bottom: 1px dashed #d8d8d8;
     background: white;
     height: auto;
@@ -104,6 +100,7 @@ html {
     background: white;
     border-bottom: 1px dashed #d8d8d8;
     height: auto;
+    padding: 18px 15px 25px 15px;
 }
     
     .floatingMenu li {
@@ -137,7 +134,7 @@ html {
 }
 
 
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 768px){
     /* For iPad: */
     .col-1 {width: 48%;}
     .col-2 {width: 48%; height:25px;}
@@ -158,6 +155,16 @@ html {
     height:250px;
     width:100%;
 }
+    
+    
+#colorStrip{
+    width: 100%; height: 12px;
+    border-style: solid;
+    border-color: #0165A7;
+    background-color: #0165A7;
+    
+}
+    
     .leftContainer {
     margin-top:-220px;   
     margin-left:10%;
@@ -185,7 +192,7 @@ html {
 .smallBox1 {
     margin-top:-205px;
     border-bottom: 1px dashed #d8d8d8;
-    margin-left:-49px;
+    margin-left:-58px;
     height: auto;
     background: white;
 }
@@ -194,14 +201,14 @@ html {
     margin-top:-65px;
     border-bottom: 1px dashed #d8d8d8;
     background: white;
-    margin-left:-49px;
+    margin-left:-58px;
     height: auto;
 }
 
 .smallBox3 {
     margin-top:0px;
     background: white;
-    margin-left:-49px;
+    margin-left:-58px;
     height: auto;
 }
     
@@ -212,7 +219,7 @@ html {
     color: #0165A7;
     margin-top:-400px;
     margin-left:10%;
-    width:70%;
+    width:75%;
 }
 
 .floatingMenu ul {
@@ -257,6 +264,16 @@ html {
     height:150px;
     width:100%;
 }
+    
+    
+#colorStrip{
+    width: 100%; height: 15px;
+    border-style: solid;
+    border-color: #0165A7;
+    background-color: #0165A7;
+    
+}
+    
     .leftContainer {
     margin-top:-90px;   
     margin-left:20%;
@@ -264,12 +281,14 @@ html {
     height:430px;
 }
     #colorStrip1{
-    width: 100%; height: 15px;
+    width: 80%; height: 15px;
     border-style: solid;
     border-color: #d8d8d8;
     background-color: #d8d8d8;
     height:100px;
-    margin-top:20%;
+    margin-top:19%;
+        float:left;
+        
     
 }
     
@@ -285,6 +304,7 @@ html {
     margin-left:-40px;
     border-bottom: 0px;
     height: auto;
+    padding: 20px -10px 20px 5px;
 }
 
 .smallBox2 {
@@ -293,6 +313,7 @@ html {
     margin-left:0px;
     height: auto;
     border-bottom: 0px;
+    padding: 20px -5px 20px 25px;
 }
 
 .smallBox3 {
@@ -300,6 +321,7 @@ html {
     margin-left:0px;
    /* border-right: 1px dashed #d8d8d8;*/
     height: auto;
+    padding: 20px -5px 20px 25px;
 }
     
     .floatingMenu li {
@@ -333,11 +355,3 @@ html {
 
 
 
-
-#colorStrip{
-    width: 100%; height: 15px;
-    border-style: solid;
-    border-color: #0165A7;
-    background-color: #0165A7;
-    
-}
